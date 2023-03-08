@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/second_widget.css">
+  <link rel="stylesheet" href="css/first_widget.css">
+  <link rel="stylesheet" href="css/third_widget.css">
+  <title>my project</title>
+</head>
+<body>
+  <div class="main-container">
+<header class="header"><span class="header-name"><p>< /TurorialCode ></p></header>
+<span class="f-hero-text">Hi to all programmers</span>
+<div class="container-text-1">
+ <div class="select-text">today I will tell you how to make such 
+  a widget using Js, html, css, api.</div><img class="arrow" src="img\akar-icons_arrow-back.svg" alt="arrow">
+
+</div>
+<div class="container-for-widget">
+  <div class="container-widget-3">
+  <div class="wrapper2">
+  <div class="weather2" id="weather2"></div>
+
+  </div>
+</div>
+<div class="container-widget-2">
+  <div class="wrapper1">
+  <div class="weather1" id="weather1"></div>
+
+  </div>
+</div>
+<div class="container-widget"><div class="weather-app">
+  
+  <div class="wrapper">
+    <div class="weather" id="weather"></div>
+ 
+    </div>
+    
+   </div></div>
+
+   
+</div>
+<div class="container-second-hero"><p class="first-hero-text">First we create a basic file structure - Js, html, css.
+  Then we need to register the html structure.</p>
+<p class="second-hero-text">The main part of the html will be done using js!</p>
+<img src="img\akar-icons_arrow-down.svg" alt="arrow-down" class="arrow-down">
+
+</div>
+
+<div class="container-bg-cod cb-target-1">
+  <button class="js-cb-button btn-1" data-clipboard-target=".cb-target-1" style="background-image: url(/html/img/icons8-скопировать-40.png);"></button>
+  
+  <pre class="hljs" style=" height: 300px; font-size: 18px; border-radius: 10px; display: block; overflow-x: auto; padding: 30px; background: rgb(34, 34, 34); color: rgb(170, 170, 170);"><span class="xml"> <span class="hljs-tag">&lt;<span class="hljs-name" style="color: rgb(102, 68, 170);">code</span>&gt;</span>
+    <span class="hljs-tag cb-target-1">&lt;<span class="hljs-name " style="color: rgb(102, 68, 170);">body</span>&gt;</span>
+      <span class="hljs-tag ">&lt;<span class="hljs-name" style="color: rgb(102, 68, 170);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(255, 204, 51);">"wrapper"</span>&gt;</span>
+       <span class="hljs-tag ">&lt;<span class="hljs-name" style="color: rgb(102, 68, 170);">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(255, 204, 51);">"weather"</span>            <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(255, 204, 51);">"weather"</span>&gt;</span>
+       <span class="hljs-tag ">&lt;/<span class="hljs-name" style="color: rgb(102, 68, 170);">div</span>&gt;</span>
+      <span class="hljs-tag ">&lt;/<span class="hljs-name" style="color: rgb(102, 68, 170);">div</span>&gt;</span>
+    <span class="hljs-tag ">&lt;/<span class="hljs-name" style="color: rgb(102, 68, 170);">body</span>&gt;</span>
+  <span class="hljs-tag ">&lt;/<span class="hljs-name" style="color: rgb(102, 68, 170);">code</span>&gt;</span></span></pre>
+
+</div>
+
+<div class="container-text-secondHero ">
+  <p class="secondHero-text">Our next step is css parameters =/</p>
+</div>
+<div class="container-bg-cod-second ">
+  <button class="js-cb-button btn-2" data-clipboard-target=".cb-target-2 "style="background-image: url(/html/img/icons8-скопировать-40.png);"></button>
+  <pre class="hljs cb-target-2"  style="display: block; font-size: 18px; border-radius: 10px; overflow-x: auto; padding: 25px; background: rgb(34, 34, 34); color: rgb(170, 170, 170);"><span class="hljs-comment" style="color: rgb(68, 68, 68);">/* We prescribe standard parameters for working with the project */</span>
+    @<span class="hljs-keyword" style="color: rgb(102, 68, 170);">import</span> url(<span class="hljs-string" style="color: rgb(255, 204, 51);">'https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&amp;display=swap'</span>);
+    *{
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">0</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">padding</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">0</span>;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">box-sizing</span>: border-box;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">color</span>:ghostwhite;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">font-family</span>: <span class="hljs-string" style="color: rgb(255, 204, 51);">'Open Sans'</span>, sans-serif;
+    
+    }
+    <span class="hljs-comment" style="color: rgb(68, 68, 68);">/* We are making a container for convenient placement of our widget */</span>
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.container</span>{
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">width</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">1440px</span>;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">height</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">100vh</span>;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">0</span> auto;
+    
+    }
+    <span class="hljs-comment" style="color: rgb(68, 68, 68);">/* we put our widget in the center and set the background color*/</span>
+    <span class="hljs-selector-tag" style="color: rgb(102, 68, 170);">body</span>{
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">display</span>: flex;
+        <span class="hljs-attribute" style="color: rgb(102, 68, 170);">justify-content</span>: center;
+        <span class="hljs-attribute" style="color: rgb(102, 68, 170);">align-items</span>: center;
+        <span class="hljs-attribute" style="color: rgb(102, 68, 170);">min-height</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">100vh</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">background</span>:no-repeat <span class="hljs-built_in" style="color: rgb(102, 68, 170);">linear-gradient</span>(45deg,rgba(0, 0, 0, 0.884), <span class="hljs-built_in" style="color: rgb(102, 68, 170);">rgba</span>(255, 255, 255, 0.541));
+    }
+    
+    <span class="hljs-comment" style="color: rgb(68, 68, 68);">/* making a design for our widget */</span>
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather</span> {
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">cursor</span>: pointer;  
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">user-select</span>: none;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">background</span>:<span class="hljs-built_in" style="color: rgb(102, 68, 170);">linear-gradient</span>(45deg,rgb(85, 159, 189),white);
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">border-radius</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">10px</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">padding</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">20px</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">0</span> auto;
+    
+    }
+    
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_header</span> {
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">width</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">170px</span>;
+     
+    }
+    
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_city</span> {
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">40px</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">font-weight</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">700</span>;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin-bottom</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">15px</span>;
+    }
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_status</span> {
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">20px</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin-bottom</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">10px</span>;
+    }
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_icon</span> {
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">position</span>: absolute;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin-left</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">80px</span>;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin-top</span>: -<span class="hljs-number" style="color: rgb(170, 170, 170);">48px</span>;
+    }
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_temp</span>{
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">font-size</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">30px</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">font-weight</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">700</span>;
+      <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin-bottom</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">10px</span>;
+    }
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_temp</span><span class="hljs-selector-pseudo">::after</span>,
+    <span class="hljs-selector-class" style="color: rgb(102, 68, 170);">.weather_feels-like</span><span class="hljs-selector-pseudo">::after</span>{
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">display</span>: inline-block;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">margin-left</span>: <span class="hljs-number" style="color: rgb(170, 170, 170);">5px</span>;
+    <span class="hljs-attribute" style="color: rgb(102, 68, 170);">content</span>:<span class="hljs-string" style="color: rgb(255, 204, 51);">"°C"</span>;
+    }</pre>
+
+</div>
+<div class="container-third-text">
+  <p class="third-text">Well, here's our Js 0_o</p>
+</div>
+<div class="container-bg-cod-third">
+  <button class="js-cb-button btn-3" data-clipboard-target=".cb-target-3"style="background-image: url(/html/img/icons8-скопировать-40.png);"></button>
+  <pre class="hljs cb-target-3" style="display: block; border-radius: 10px; font-size: 15px; overflow-x: auto; background: rgb(34, 34, 34); color: rgb(139, 135, 146); padding: 30px;"><span class="hljs-comment" style="color: rgb(126, 120, 135);">//strict regime</span>
+    <span class="hljs-meta" style="color: rgb(170, 87, 60);">"use strict"</span>
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//pulling out the weather block</span>
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> weatherBlock = <span class="hljs-built_in" style="color: rgb(170, 87, 60);">document</span>.querySelector(<span class="hljs-string" style="color: rgb(42, 146, 146);">'#weather'</span>);
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//we make async function in order for the function </span>
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//to work correctly</span>
+    
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">async</span> <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">function</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">loadWeather</span>(<span class="hljs-params" style="color: rgb(170, 87, 60);">e</span>)</span>{
+    
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//we make a changeable const and assign it an api</span>
+    
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> server = <span class="hljs-string" style="color: rgb(42, 146, 146);">'https://api.openweathermap.org/data/2.5/weather?units=metric&amp;q=Kyiv&amp;appid=your_api_kay'</span>;
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//response we assign a fetch request by the get method to get data from the api</span>
+    
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> response = <span class="hljs-keyword" style="color: rgb(149, 90, 231);">await</span> fetch(server, {
+    method:<span class="hljs-string" style="color: rgb(42, 146, 146);">'GET'</span>,
+    });
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//</span>
+    we receive information <span class="hljs-keyword" style="color: rgb(149, 90, 231);">from</span> the api <span class="hljs-keyword" style="color: rgb(149, 90, 231);">in</span> json format
+    
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> responseResoult = <span class="hljs-keyword" style="color: rgb(149, 90, 231);">await</span> response.json();
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//we do a routine health check</span>
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">if</span>(response.ok){
+      getWeather(responseResoult);
+    } <span class="hljs-keyword" style="color: rgb(149, 90, 231);">else</span>{
+      weatherBlock.innerHTML = responseResoult.message;
+    }
+    
+    <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(149, 90, 231);">function</span> <span class="hljs-title" style="color: rgb(87, 109, 219);">getWeather</span>(<span class="hljs-params" style="color: rgb(170, 87, 60);">data</span>)</span>{
+      <span class="hljs-built_in" style="color: rgb(170, 87, 60);">console</span>.log(data);
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//in the changeable ones, we assign parameters from the api for convenient use.</span>
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//all information can be viewed in the console</span>
+    
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> location = data.name;
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> temp = <span class="hljs-built_in" style="color: rgb(170, 87, 60);">Math</span>.round(data. main.temp);
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> feelsLike = <span class="hljs-built_in" style="color: rgb(170, 87, 60);">Math</span>.round(data.main.feels_like);
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> weatherStatus = data.weather[<span class="hljs-number" style="color: rgb(170, 87, 60);">0</span>].main;
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> weatherIcon = data.weather[<span class="hljs-number" style="color: rgb(170, 87, 60);">0</span>].icon;
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//we are making a template structure for our html, this is so that //our weather is dynamic and does not look like shit </span>
+    
+      <span class="hljs-keyword" style="color: rgb(149, 90, 231);">const</span> template =<span class="hljs-string" style="color: rgb(36, 94, 21);">`&lt;div class="weather_header"&gt;
+      &lt;div class="weather_main"&gt;
+        &lt;div class="weather_city"&gt;<span class="hljs-subst">${location}</span>&lt;/div&gt;
+        &lt;div class="weather_status"&gt;<span class="hljs-subst">${weatherStatus}</span>&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="weather_icon"&gt;
+    //here we upload a dynamic image from the site
+        &lt;img src="https://openweathermap.org/img/w/<span class="hljs-subst">${weatherIcon}</span>.png" alt="clouds"&gt;
+      &lt;/div&gt;
+      &lt;div class="weather_temp"&gt;<span class="hljs-subst">${temp}</span>&lt;/div&gt;
+      &lt;div class="weather_feels-like"&gt;Feels like: <span class="hljs-subst">${feelsLike}</span>&lt;/div&gt;
+    &lt;/div&gt;    `</span>;
+    
+    
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//we call our template and paste it into html</span>
+    
+    weatherBlock.innerHTML=template;
+    };
+    
+    }
+    <span class="hljs-comment" style="color: rgb(126, 120, 135);">//calling the entire function using if</span>
+    <span class="hljs-keyword" style="color: rgb(149, 90, 231);">if</span> (weatherBlock) {
+      loadWeather();
+    }
+    
+    </pre>
+</div>
+<div class="container-for-tittle">
+  <p class="tittle">the api key can be taken from the website 
+    <a class="link" href="https://openweathermap.org/api">https://openweathermap.org/api</a>
+    but you need to wait 24 hours after registration, 
+    and if you do not wait, the api will not work</p>
+</div>
+<div class="container-text-end">
+  <p class="text-end">That's it,gl hf!</p>
+
+</div>
+  </div>
+</body>
+
+<script src="clipboard.js-master/dist/clipboard.js"></script>
+<script src="js/Clipboard-add.js"></script>
+<script src="js/weather-first.js"></script>
+<script src="js/weather-second.js"></script>
+<script src="js/weather-third.js"></script>
+</html>

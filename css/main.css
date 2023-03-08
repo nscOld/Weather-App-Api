@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&family=Open+Sans:wght@600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color:ghostwhite;
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body{
+  background:#151515;
+}
+
+
+
+.main-container{
+  width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  background: #151515;
+  border-radius: 0 0 30px 30px;
+  -webkit-border-radius: 0 0 30px 30px;
+  -moz-border-radius: 0 0 30px 30px;
+  -ms-border-radius: 0 0 30px 30px;
+  -o-border-radius: 0 0 30px 30px;
+  margin-bottom: 50px;
+}
+
+.header{
+  background: hsla(0, 0%, 12%, 0.5);
+  width: 1440px;
+  height: 100px;
+  border-radius: 0 0 30px 30px;
+  -webkit-border-radius: 0 0 30px 30px;
+  -moz-border-radius: 0 0 30px 30px;
+  -ms-border-radius: 0 0 30px 30px;
+  -o-border-radius: 0 0 30px 30px;
+  backdrop-filter: blur(2px);
+}
+.header-name{
+position: absolute;
+width: 357px;
+height: 46px;
+left: 570px;
+top: 27px;
+
+font-family: 'JetBrains Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 46px;
+cursor:default;
+}
+.f-hero-text{
+  position: relative;
+  width: 630px;
+height: 66px;
+left: 465px;
+top: 111px;
+font-weight: 400;
+font-size: 40px;
+line-height: 66px;
+}
+.container-text-1 {
+  position: relative;
+  width: 702px;
+  height: 80px;
+  left: 60px;
+  top: 215px;
+  
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+.arrow{
+  position: relative;
+  width: 127px;
+height: 127px;
+left: 600px;
+top: -28px;
+
+}
+
+::selection{
+  background-color: rgb(59, 59, 59);
+  color:white;
+}
+
+button{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+border-style: none;
+}
+
+/*  */
+img{
+  user-select: none;
+}
+.copy{
+  position: relative;
+  left: 525px;
+  top:25px;
+  z-index: 1;
+}
+.first-hero-text{
+position: relative;
+width: 990px;
+height: 80px;
+left: 60px;
+top: -10px;
+font-size: 30px;
+line-height: 40px;
+}
+.second-hero-text{
+position: relative;
+width: 864px;
+height: 40px;
+left: 60px;
+top: -10px;
+font-size: 25px;
+line-height: 40px;
+color: rgba(255, 255, 255, 0.5);
+}
+.arrow-down{
+position: relative;
+width: 88px;
+height: 86px;
+left: 685px;
+}
+.container-bg-cod{
+position: relative;
+  width: 642px;
+
+left: 408px;
+
+background: rgb(34, 34, 34);
+border-radius: 10px;
+}
+.container-text-secondHero{
+position: relative;
+width: 612px;
+height: 40px;
+left: 424px;
+top: 70px;
+
+}
+.secondHero-text{
+
+  font-size: 30px;
+  line-height: 40px;
+  /* identical to box height */
+  
+  
+  color: #FFFFFF;
+}
+.container-bg-cod-second{
+  position: relative;
+  width: 1120px;
+  left: 168px;
+  top: 100px;
+}
+.container-third-text{
+  position: relative;
+  width: 414px;
+height: 40px;
+left: 523px;
+top: 172px;
+}
+.third-text{
+
+font-size: 30px;
+line-height: 40px;
+}
+.btn-1{
+  position: relative;
+  left: 570px;
+  top:25px;
+}
+.btn-2{
+  position: relative;
+  left: 1050px;
+  top: 70px;
+}
+.container-bg-cod-third{
+  position: relative;
+  width: 1180px;
+  left: 133px;
+top: 200px;
+border-radius: 10px;
+}
+.btn-3{
+  position: relative;
+  left: 1110px;
+  top: 80px;
+}
+.container-for-tittle{
+position: relative;
+  width: 1104px;
+height: 324px;
+left: 168px;
+top: 239px;
+
+background: #242427;
+border-radius: 10px;
+}
+.tittle{
+  position: relative;
+  width: 1037px;
+  height: 184px;
+  left: 50px;
+  top: 100px;
+ 
+  
+
+  font-size: 25px;
+  line-height: 46px;
+  
+  color: #FFFFFF;
+}
+a{
+  text-decoration: none;
+}
+.link{
+  color: rgb(102, 68, 170);
+  text-decoration: none;
+}
+.container-img1{
+  position: relative;
+  width: 1104px;
+  height: 548px;
+  left: 168px;
+  top: 300px;
+  
+  background: url(/main/html/img/image\ 1.svg);
+  border-radius: 15px;
+  
+}
+.container-img2{
+  position: relative;
+  width: 1104px;
+  height: 548px;
+  left: 168px;
+top: 350px;
+  background: url(/main/html/img/image\ 2.svg);
+  border-radius: 15px;
+}
+.container-text-end{
+position: relative;
+width: 510px;
+height: 66px;
+left: 465px;
+top: 390px;
+
+}
+.text-end{
+font-size: 45px;
+line-height: 66px;
+color: #FFFFFF;
+}

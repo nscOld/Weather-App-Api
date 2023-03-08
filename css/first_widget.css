@@ -1,0 +1,53 @@
+/* WIDGET-SETTING */
+.container-widget{
+
+  width: 230px;
+  position: relative;
+  left: 615px;
+  top: -120px;
+}
+.weather {
+  height: 220px;
+  cursor: pointer;
+user-select: none;
+  background:linear-gradient(45deg,rgb(64, 130, 156),white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+
+.weather_header {
+  width: 170px;
+ 
+}
+
+.weather_city {
+  font-size: 40px;
+  font-weight: 700;
+margin-bottom: 15px;
+}
+.weather_status {
+  font-size:20px;
+  margin-bottom: 10px;
+}
+.weather_icon {
+position: absolute;
+margin-left: 80px;
+margin-top: -48px;
+}
+.weather_temp{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.weather_temp::after,
+.weather_feels-like::after{
+display: inline-block;
+margin-left: 5px;
+content:"°C";
+}
